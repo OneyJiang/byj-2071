@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* p:first-child {
+            color: red;
+        }
+        p:last-child {
+            color: yellow;
+        } */
+        /* p:nth-child(1){
+            background-color: yellow;
+        } */
+        /* p:first-of-type {
+            background-color: yellow;
+        }
+        p:last-of-type {
+            background-color: red;
+        } */
+        p:nth-of-type(2) {
+            background-color: tomato;
+        }
+        h1{
+            width: 1000px;
+            word-wrap: break-word;
+        }
+        h1::first-letter {
+            font-size: 100px;
+        }
+        h1::first-line {
+            background-color: blue;
+        }
+        h1::selection {
+            background-color: yellow;
+        }
+        .pp1::before{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .pp1::after {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</h1>
+        <span>00</span>
+        <p class="pp1">1</p>
+        <div>
+            <p>1-1</p>
+        </div>
+        <span>00</span>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <h1>555555</h1>
+    </div>
+    
+</body>
+</html>
