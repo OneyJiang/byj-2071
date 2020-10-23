@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container{
+            font-size: 0;
+            width: 886px;
+            margin: 100px auto;
+        }
+        .box{
+            display: inline-block;
+            position: relative;
+        }
+        .box img {
+            position: relative;
+            z-index: 100;
+            transition: all 0.5s linear;
+        }
+        .border{
+            width: 262px;
+            height: 176px;
+            border: solid 1px #000;
+            position: absolute;
+            transition: all 0.5s linear;
+        }
+        .border1{
+            top: 3px;
+            left: 3px;
+        }
+        .border2{
+            top: 6px;
+            left: 6px;
+        }
+        .border3{
+            top: 9px;
+            left: 9px;
+        }
+        .border4 {
+            top: 12px;
+            left: 12px;
+        }
+
+        .box:hover img {
+            transform: rotate(-1deg);
+        }
+        .box:hover .border1 {
+            transform: rotate(-6deg);
+        }
+        .box:hover .border2 {
+            transform: rotate(1deg);
+        }
+        .box:hover .border3 {
+            transform: rotate(2deg);
+        }
+        .box:hover .border4 {
+            transform: rotate(3deg);
+        }
+
+        .ssss {
+            width: 100px;
+            height: 100px;
+            transition: all 1s linear;
+            
+        }
+        .ssss:hover {
+            transform: rotate(360deg) scale(1.4);
+            
+        }
+    </style>
+</head>
+<body>
+
+    <img class="ssss" src="./images/01.jpg" alt="">
+
+    <div class="container">
+        <div class="box" style="margin-right: 50px;">
+            <img src="./images/01.jpg" alt="">
+            <div class="border border1"></div>
+            <div class="border border2"></div>
+            <div class="border border3"></div>
+            <div class="border border4"></div>
+        </div>
+        <div class="box" style="margin-right: 50px;">
+            <img src="./images/02.jpg" alt="">
+            <div class="border border1"></div>
+            <div class="border border2"></div>
+            <div class="border border3"></div>
+            <div class="border border4"></div>
+        </div>
+        <div class="box">
+            <img src="./images/03.jpg" alt="">
+            <div class="border border1"></div>
+            <div class="border border2"></div>
+            <div class="border border3"></div>
+            <div class="border border4"></div>
+        </div>
+    </div>
+
+</body>
+</html>
