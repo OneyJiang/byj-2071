@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./images/bodyBg.jpg);
+            background-size: cover;
+        }
+
+        ul {
+            font-size: 0;
+            width: 960px;
+            padding: 50px 0;
+            margin: auto;
+        }
+
+        ul li {
+            list-style: none;
+            width: 180px;
+            height: 105px;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: relative;
+            display: inline-block;
+            margin: 30px 5px;
+            text-align: center;
+        }
+        ul li img {
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10; */
+            transition: all 0.5s linear;
+            margin-top: 12px;
+            position: relative;
+            z-index: 10;
+        }
+        .bg1{
+            width: 180px;
+            height: 105px;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: rotate(60deg);
+        }
+        ul li::before{
+            content: "";
+            display: block;
+            width: 180px;
+            height: 105px;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: rotate(60deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        li::after{
+            content: "";
+            display: block;
+            width: 180px;
+            height: 105px;
+            background-color: rgba(0, 0, 0, 0.4);
+            transform: rotate(120deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        li:hover img {
+            transform: scale(1.5) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <ul>
+            <li>
+                <img src="./images/1.png" alt="">
+            </li>
+            <li>
+                <img src="./images/2.png" alt="">
+            </li>
+            <li>
+                <img src="./images/3.png" alt="">
+            </li>
+            <li>
+                <img src="./images/4.png" alt="">
+            </li>
+            <li>
+                <img src="./images/5.png" alt="">
+            </li>
+            <li style="margin-left: 100px;">
+                <img src="./images/7.png" alt="">
+            </li>
+            <li>
+                <img src="./images/8.png" alt="">
+            </li>
+            <li>
+                <img src="./images/9.png" alt="">
+            </li>
+            <li>
+                <img src="./images/10.png" alt="">
+            </li>
+            <li>
+                <img src="./images/11.png" alt="">
+            </li>
+            <li>
+                <img src="./images/12.png" alt="">
+            </li>
+            <li>
+                <img src="./images/13.png" alt="">
+            </li>
+            <li>
+                <img src="./images/14.png" alt="">
+            </li>
+            <li>
+                <img src="./images/4.png" alt="">
+            </li>
+        </ul>
+    
+    </div>
+    
+</body>
+</html>
