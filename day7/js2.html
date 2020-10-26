@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        ul {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="uull" onmouseout="aaa()">
+        
+    </ul>
+
+    <div class="div1">跳转百度
+        <p>12</p>
+        <p>34</p>
+    </div>
+    <div class="div1">哈哈哈哈</div>
+    <div class="div2">哈哈哈哈</div>
+    <h1 id="hh1" style="color: red;font-size: 200px;">111111111</h1>
+    <h2 name="haha">2222</h2>
+    <span>ljsifjahkglf</span>
+
+    <script>
+        // alert(123)
+        // window.alert(345)
+
+        // var a = confirm('你确定要犯法吗');
+        // console.log(a);
+
+        // var div1 = document.getElementsByClassName("div1")[0]
+        // console.log( div1.innerHTML );
+        // console.log( div1.innerText );
+
+        // var h1 = document.getElementById("hh1");
+        // console.log( h1 );
+
+        // var hh = document.getElementsByName('haha')
+        // console.log('hh', hh);
+
+        // var span1 = document.getElementsByTagName('span')
+        // console.log('span1', span1);
+
+        // var hh1 = document.querySelectorAll(".div1, .div2")
+        // console.log('hh1', hh1);
+
+
+        // 获取#hh1 的style属性
+        // var hh1 = document.getElementById("hh1");
+        // console.log( hh1.getAttribute("style") );
+        // hh1.setAttribute('style', 'color: blue;font-size: 20px;')
+        // hh1.style.color = "pink"
+
+        // $("#hh1").css('color', 'blue')
+
+        // var div1 = document.getElementsByClassName("div1")[0]
+        // var childs = div1.childNodes;
+        // console.log('childs', childs)
+
+        // var hh1 = document.getElementById("hh1");
+        // hh1.innerHTML = '拉洛索洛芬酸辣粉加'
+
+
+
+    var arr = [
+        {
+            id: 1,
+            name: "张三"
+        },
+        {
+            id: 2,
+            name: "李四"
+        },
+        {
+            id: 2,
+            name: "王五"
+        }
+    ]
+
+    // var container = $('#uull').append('<li>123</li>')
+
+    $.each(arr, function (key, value) { //遍历这个数组，调用匿名函数进行处理
+        $("#uull").append('<li>'+ value.name +'</li>');
+    })
+
+    function clickFun1 () {
+        location.href = 'https://www.baidu.com';
+    }
+
+    function onclick () {
+        console.log('1')
+    }
+
+
+    // var hh1 = $("#hh1")
+    // $("#hh1").onclick = function () {
+    //     console.log('here')
+    // }
+
+    var hh1 = document.getElementById("hh1");
+    // hh1.onclick = function () {
+    //     console.log('here')
+    // }
+
+    hh1.addEventListener('click', function () {
+        console.log('addEventListener')
+    })
+
+
+
+    function aaa () {
+        console.log('移出')
+    }
+
+
+        
+    </script>
+
+</body>
+</html>
