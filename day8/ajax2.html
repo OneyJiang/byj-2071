@@ -96,20 +96,22 @@
 
             data.forEach( (item, index) => {
                 $box.append(`
-                <div class="item-lesson" id="div${index}">
+                <div class="item-lesson">
                     <img src="${item.coverUrl}" alt="">
                     <h1>${item.title}</h1>
                     <h2>${item.summary}</h2>
-                    <button onclick="deleteThis(${index})">删除</button>
+                    <button onclick="deleteThis(this)">删除</button>
                 </div>`)
             });
         }
 
-        function deleteThis (index) {
-            console.log('index', index)
+        function deleteThis (button) {
+            console.log('button', button)
+            console.log(button.parentNode);
+            button.parentNode.parentNode.removeChild(button.parentNode)
             // $("#div"+index)
-            var currentdiv = document.getElementById(`div${index}`)
-            currentdiv.parentNode.removeChild(currentdiv);
+            // var currentdiv = document.getElementById(`div${index}`)
+            // currentdiv.parentNode.removeChild(currentdiv);
         }
 
         

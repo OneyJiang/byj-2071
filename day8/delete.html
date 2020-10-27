@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="box">
+        <p id="p1">123</p>
+        <p id="p2">456</p>
+    </div>
+
+    <script>
+        // var $p1 = $("#p1");
+        var $p1 = document.getElementById('p1')
+        $p1.parentNode.removeChild($p1);
+    </script>
+</body>
+</html>
